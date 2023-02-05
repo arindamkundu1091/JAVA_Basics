@@ -1,0 +1,152 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Question_3",
+            "request": "launch",
+            "mainClass": "Question_3",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Question_2",
+            "request": "launch",
+            "mainClass": "Question_2",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Gp_Series",
+            "request": "launch",
+            "mainClass": "Gp_Series",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch InheritenceDemo",
+            "request": "launch",
+            "mainClass": "InheritenceDemo",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Learn",
+            "request": "launch",
+            "mainClass": "Learn",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch check",
+            "request": "launch",
+            "mainClass": "Array.check",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch_1_Variables_Operator",
+            "request": "launch",
+            "mainClass": "Ch_1_Variables_Operator",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ch_2_String",
+            "request": "launch",
+            "mainClass": "Ch_2_String",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Circle",
+            "request": "launch",
+            "mainClass": "Circle",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Clock",
+            "request": "launch",
+            "mainClass": "Clock",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Database",
+            "request": "launch",
+            "mainClass": "Database",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorials",
+            "request": "launch",
+            "mainClass": "Factorials",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch For_Loops",
+            "request": "launch",
+            "mainClass": "For_Loops",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberConversion",
+            "request": "launch",
+            "mainClass": "NumberConversion",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Rectangle",
+            "request": "launch",
+            "mainClass": "Rectangle",
+            "projectName": "Practice_47c3a48d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Run",
+            "request": "launch",
+            "mainClass": "Run",
+            "projectName": "Practice_47c3a48d"
+        }
+    ]
+}
