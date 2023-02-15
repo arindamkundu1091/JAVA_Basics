@@ -2,7 +2,7 @@
 // import java.lang.*;
 // import java.util.*;
 
-class Matrix {
+class Matrix1 {
     // A function to rotate a matrix
     static int R = 3;
     static int C = 3;
