@@ -46,15 +46,15 @@ class TeachingStaff extends Staff {
     void showTeachingData() {
         System.out.println("Name : " + name + "\nBirthYear : " + birthYear + "\nOld Salary : " + salary + "\nSubject : "
                 + subject);
-        double newSalary = salary + (salary * (result / 1000));
+        double newSalary = (salary + (salary * (result / 1000)));
         System.out.println("New Salary : " + newSalary);
     }
 }
 
 class NonTeachingStaff extends Staff {
     String lab;
-    int exp;
-    NonTeachingStaff(String name, int birthYear, String lab, int exp, double salary) {
+    double exp;
+    NonTeachingStaff(String name, int birthYear, String lab, double exp, double salary) {
         super(name, birthYear, salary);
         this.lab = lab;
         this.exp = exp;
@@ -62,7 +62,7 @@ class NonTeachingStaff extends Staff {
     void showNonTeachingData() {
         System.out.println("Name : " + name + "\nBirthYear : " + birthYear + "\nOld Salary : " + salary + "\nSubject : "
                 + lab);
-        double newSalary = salary + (salary * (exp / 100));
+        double newSalary = (salary + (salary * (exp / 100)));
         System.out.println("New Salary : " + newSalary);
     }
 }
@@ -71,10 +71,12 @@ class Prof {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
+        sc.nextLine();
         switch (t) {
             case 1: {
                 String name = sc.nextLine();
                 int birthYear = sc.nextInt();
+                sc.nextLine();
                 String dept = sc.nextLine();
                 int atd = sc.nextInt();
                 Student std = new Student(name, birthYear, dept, atd);
@@ -84,6 +86,7 @@ class Prof {
         case 2: {
                 String name = sc.nextLine();
                 int birthYear = sc.nextInt();
+                sc.nextLine();
                 String subject = sc.nextLine();
                 int result = sc.nextInt();
                 double salary = sc.nextDouble();
@@ -94,8 +97,9 @@ class Prof {
             case 3: {
                 String name = sc.nextLine();
                 int birthYear = sc.nextInt();
+                sc.nextLine();
                 String lab = sc.nextLine();
-                int exp = sc.nextInt();
+                double exp = sc.nextDouble();
                 double salary = sc.nextDouble();
                 NonTeachingStaff nts = new NonTeachingStaff(name, birthYear, lab, exp, salary);
                 nts.showNonTeachingData();
