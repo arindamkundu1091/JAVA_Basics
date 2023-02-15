@@ -50,33 +50,27 @@ class Event_2 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
+        String name = sc.nextLine();
+        String detail = sc.nextLine();
+        String type = sc.nextLine();
+        String ownerName = sc.nextLine();
+        double costPerDay = sc.nextDouble();
+        int noOfS = sc.nextInt();
+        sc.nextLine();
+        String d1 = sc.nextLine();
+        String d2 = sc.nextLine();
         switch (t) {
             case 1: {
-                String name = sc.nextLine();
-                String detail = sc.nextLine();
-                String type = sc.nextLine();
-                String ownerName = sc.nextLine();
-                double costPerDay = sc.nextDouble();
-                int noOfStall = sc.nextInt();
-                sc.nextLine();
-                Exhibition e = new Exhibition(name, detail, type, ownerName, costPerDay, noOfStall);
-                e.calculateGST(sc.nextLine(), sc.nextLine());
+                Exhibition e = new Exhibition(name, detail, type, ownerName, costPerDay, noOfS);
+                e.calculateGST(d1, d2);
             }
             break;
             case 2: {
-                String name = sc.nextLine();
-                String detail = sc.nextLine();
-                String type = sc.nextLine();
-                String ownerName = sc.nextLine();
-                double costPerDay = sc.nextDouble();
-                int noOfSeats = sc.nextInt();
-                sc.nextLine();
-                StageEvent se = new StageEvent(name, detail, type, ownerName, costPerDay, noOfSeats);
-                se.calculateGST(sc.nextLine(), sc.nextLine());
+                StageEvent se = new StageEvent(name, detail, type, ownerName, costPerDay, noOfS);
+                se.calculateGST(d1, d2);
             }
             break;
         }
         sc.close();
     }
 }
-
