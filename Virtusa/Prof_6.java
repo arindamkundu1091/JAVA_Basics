@@ -72,11 +72,11 @@ class Prof_6 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
+        String name = sc.nextLine();
+        int birthYear = sc.nextInt();
+        sc.nextLine();
         switch (t) {
             case 1: {
-                String name = sc.nextLine();
-                int birthYear = sc.nextInt();
-                sc.nextLine();
                 String dept = sc.nextLine();
                 int atd = sc.nextInt();
                 Student std = new Student(name, birthYear, dept, atd);
@@ -84,9 +84,6 @@ class Prof_6 {
             }
             break;
         case 2: {
-                String name = sc.nextLine();
-                int birthYear = sc.nextInt();
-                sc.nextLine();
                 String subject = sc.nextLine();
                 int result = sc.nextInt();
                 double salary = sc.nextDouble();
@@ -95,9 +92,6 @@ class Prof_6 {
             }
             break;
             case 3: {
-                String name = sc.nextLine();
-                int birthYear = sc.nextInt();
-                sc.nextLine();
                 String lab = sc.nextLine();
                 double exp = sc.nextDouble();
                 double salary = sc.nextDouble();
