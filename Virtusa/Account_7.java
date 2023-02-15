@@ -23,7 +23,7 @@ class SavingAccount extends Account {
 }
 
 class FixedAccount extends SavingAccount {
-    private Integer lockingPeriod;
+    protected Integer lockingPeriod;
 }
 
 class AccountBO {
