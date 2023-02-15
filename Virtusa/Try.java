@@ -1,3 +1,4 @@
+// You are using Java
 import java.util.Scanner;
 
 class Person{
@@ -17,4 +18,32 @@ class Student extends Person{
         this.dept = dept;
         this.atd = atd;
     }
+    boolean eligible(){
+        if(atd >= 75){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
+
+class Staff extends Person{
+    double salary;
+    Staff(String name, String birthYear, double salary){
+        super(name, birthYear);
+        this.salary = salary;
+    }
+}
+
+class TeachingStaff extends Staff{
+    String subject;
+    double result;
+    TeachingStaff(String name, String birthYear, double salary, String subject, double result){
+        super(name, birthYear, salary);
+        this.subject = subject;
+        this.result = result;
+    }
+}
+
+
+

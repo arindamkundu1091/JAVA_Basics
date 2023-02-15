@@ -1,62 +1,76 @@
 import java.util.Scanner;
 
 class Shape{
-    double area;
+    Double area;
     public void computeArea(){
-        area = 0;
+        area = 0.00;
     }
 }
 
-class Circle extends Shape {
-    double r;
+class Circle extends Shape{
+    Double r;
+    Circle(Double r){
+        this.r = r;
+    }
     public void computeArea(){
-        Scanner sc = new Scanner(System.in);
-        r = sc.nextDouble();
         area = (3.14*r*r);
         System.out.printf("%.2f",area);
-        sc.close();
     }
 }
 
 class Rectangle extends Shape{
-    double l;
-    double b;
+    Double l;
+    Double b;
+    Rectangle(Double l, Double b){
+        this.l = l;
+        this.b = b;
+    }
     public void computeArea(){
-        Scanner sc = new Scanner(System.in);
-        l = sc.nextDouble();
-        b = sc.nextDouble();
         area = (l*b);
         System.out.printf("%.2f",area);
-        sc.close();
     }
 }
 
 class Triangle extends Shape{
-    double b;
-    double h;
+    Double b;
+    Double h;
+    Triangle(Double b, Double h){
+        this.b = b;
+        this.h = h;
+    }
     public void computeArea(){
-        Scanner sc = new Scanner(System.in);
-        b = sc.nextDouble();
-        h = sc.nextDouble();
         area = (0.5*b*h);
         System.out.printf("%.2f",area);
-        sc.close();
     }
 }
 
-class Area{
+class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        Shape cir = new Circle();
-        Rectangle rect = new Rectangle();
-        Triangle tri = new Triangle();
+        Integer t = sc.nextInt();
         switch(t){
-            case 1: cir.computeArea();
+            case 1: {
+                Double r = sc.nextDouble();
+                Circle cir = new Circle(r);
+                cir.computeArea();
+                
+            }
                 break;
-            case 2: rect.computeArea();
+            case 3: {
+                Double b = sc.nextDouble();
+                Double h = sc.nextDouble();
+                Triangle tri = new Triangle(b, h);
+                tri.computeArea();
+                
+            }
                 break;
-            case 3: tri.computeArea();
+            case 2: {
+                Double l = sc.nextDouble();
+                Double b = sc.nextDouble();
+                Rectangle rect = new Rectangle(l,b);
+                rect.computeArea();
+                
+            }
                 break;
             default:
                 System.out.println("Invalid Input");
