@@ -83,7 +83,7 @@ class Prof_6 {
                 std.showStudentData();
             }
             break;
-        case 2: {
+            case 2: {
                 String subject = sc.nextLine();
                 int result = sc.nextInt();
                 double salary = sc.nextDouble();

@@ -25,7 +25,7 @@ class HPVISACard extends VISACard {
 public class Card_8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        Integer t = sc.nextInt();
         sc.nextLine();
         String holderName = sc.nextLine();
         String ccv = sc.nextLine();
