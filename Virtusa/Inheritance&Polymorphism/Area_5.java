@@ -1,3 +1,5 @@
+
+//Inheritance Q.5
 import java.util.Scanner;
 
 class Shape{

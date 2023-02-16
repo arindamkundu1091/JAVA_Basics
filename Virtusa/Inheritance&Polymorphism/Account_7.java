@@ -1,5 +1,5 @@
 
-// You are using Java
+// Inheritance Q.7
 import java.util.Scanner;
 
 class Main {

@@ -1,3 +1,5 @@
+
+//Inheritance Q.4
 import java.util.Scanner;
 
 class Event {

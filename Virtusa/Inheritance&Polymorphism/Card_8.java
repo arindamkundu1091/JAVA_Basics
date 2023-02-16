@@ -1,3 +1,5 @@
+
+//Inheritance Q.8
 import java.util.Scanner;
 
 class VISACard {
