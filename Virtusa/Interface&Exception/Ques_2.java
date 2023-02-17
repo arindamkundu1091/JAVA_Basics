@@ -7,8 +7,8 @@ interface i{
 }
 
 class Ques_2 implements i {
-    public void display(String str){
-        System.out.println(str);
+    public void display(String s){
+        System.out.println(s);
         System.out.print(value);
     }
     public static void main(String[] args){
