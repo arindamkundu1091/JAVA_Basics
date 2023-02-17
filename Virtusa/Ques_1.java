@@ -41,5 +41,6 @@ class Number_1 implements Number{
         } else {
             System.out.println("Enter valid number");
         }
+        sc.close();
     }
 }
