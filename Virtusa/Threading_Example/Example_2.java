@@ -61,17 +61,17 @@ class HallBooking implements Runnable {
 
 class Example_2 {
     static int n = 0;
+    static String hallName ;
+    static Double cost ;
+    static Integer hallCapacity ;
+    static Integer seatsBooked;
+    
     // static int i = 0;
     // static boolean check = false;
     // static ArrayList<String> hname = new ArrayList<>();
     // static ArrayList<Double> c = new ArrayList<>();
     // static ArrayList<Integer> hc = new ArrayList<>();
     // static ArrayList<Integer> sb = new ArrayList<>();
-
-    static String hallName ;
-    static Double cost ;
-    static Integer hallCapacity ;
-    static Integer seatsBooked ;
 
     // void setValue() {
     //     synchronized (this) {
@@ -125,13 +125,14 @@ class Example_2 {
             cost = sc.nextDouble();
             hallCapacity = sc.nextInt();
             seatsBooked = sc.nextInt();
+            HallBooking hb = new HallBooking(hallName, cost, hallCapacity, seatsBooked);
+            Thread t = new Thread(hb);
+            t.start();
+            
             // hname.add(hallName);
             // c.add(cost);
             // hc.add(hallCapacity);
             // sb.add(seatsBooked);
-            HallBooking hb = new HallBooking(hallName, cost, hallCapacity, seatsBooked);
-            Thread t = new Thread(hb);
-            t.start();
         }
 
         // Example_2 obj = new Example_2();
