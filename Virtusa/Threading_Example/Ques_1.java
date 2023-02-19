@@ -16,10 +16,8 @@ class Stall implements Runnable {
     }
 
     public void run() {
-        // System.out.println("start running");
         stallCost = stallArea * 150.0;
         System.out.println(stallCost);
-        // System.out.println("exiting");
     }
 }
 
@@ -53,9 +51,7 @@ class Thread_Ques1 {
                 Stall s = new Stall(sname, details, sarea, owner);
                 Thread t = new Thread(s);
                 t.start();
-                // System.out.println(t.getId()+" start");
             }
-            // System.out.println("main is exit");
             sc.close();
         } catch (Exception e) {
             e.printStackTrace();

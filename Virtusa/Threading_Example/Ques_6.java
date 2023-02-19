@@ -22,7 +22,6 @@ class NewT extends Thread {
                 result++;
             }
         }
-        // System.out.println("T1 count front");
         return result;
     }
 
@@ -34,7 +33,6 @@ class NewT extends Thread {
                 result++;
             }
         }
-        // System.out.println("T2 count back");
         return result;
     }
 
@@ -46,7 +44,6 @@ class NewT extends Thread {
             int[] arr = t.arr;
             int n = t.n;
             int result = (t1.countFront(arr, n) + t2.countBack(arr, n));
-            // System.out.println("Comming final Indicating");
             System.out.println("Winners : " + result);
             notify();
         }
@@ -65,11 +62,9 @@ class NewT extends Thread {
             NewT t = new NewT(arr, n);
             t.start();
             synchronized (t) {
-                // System.out.println("Main waiting");
                 t.wait();
             }
             sc.close();
-            // System.out.println("Main exist");
         } catch (Exception e) {
             e.printStackTrace();
         }
