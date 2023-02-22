@@ -1,0 +1,93 @@
+Create a Task Management using Spring Boot for the following Endpoints.
+
+
+
+Save a new Task
+
+POST - /saveTask
+
+Request Body: 
+
+{
+
+    "taskId":"12211",
+
+    "taskHolderName":"Gowthaman M",
+
+    "taskDate":"4/15/2021",
+
+    "taskName":"Spring Projects",
+
+    "taskStatus":"In Progress"
+
+}
+
+
+
+Change Task Status
+
+GET - /changeStatus?id= <taskId>
+
+
+
+
+
+Delete a Task
+
+GET - /deleteTask?id=<taskId>
+
+
+
+Get All Tasks
+
+GET - /alltasks
+
+
+
+Get Task by Task HolderName
+
+GET - /getTask?id= <taskId>
+
+
+
+
+
+Note:
+
+Store the value in the MySQL
+
+
+
+Install Dependencies -
+
+mvn install -DskipTests
+
+
+
+Create DB -
+
+mysql -u root –protocol=tcp -p
+
+password: examly
+
+create database <dbname>;
+
+
+
+Run the Project -
+
+mvn spring-boot:run
+
+
+
+MySQL Credentials:
+
+username: root
+
+Password: examly
+
+
+
+To connect to the database run the following command in terminal
+
+mysql -u root --protocol=tcp -p and press enter to enter the password
