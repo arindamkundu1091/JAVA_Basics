@@ -30,10 +30,23 @@ class Array
                     arr[j] = arr[i];
                     arr[i] = temps;
                 }
+                // System.out.println(arr[i]);
             }
         }
 
         return arr;
+    }
+    public static void main(String[] args) {
+        Array array = new Array();
+        String values = "5,3,8,2,9";
+
+        int arr[] = array.toCreate(values);
+
+        int[] sort = array.toSort(arr);
+        for(int i : sort)
+        {
+            System.out.print(i + " ");
+        }
     }
 
     int toSearch(int[] arr, int search)
